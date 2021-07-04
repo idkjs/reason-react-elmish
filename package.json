@@ -15,7 +15,7 @@
     "clean": "npm run clean:bs && npm run clean:dist",
     "clean:bs": "bsb -clean-world",
     "clean:dist": "rm -rf dist",
-    "test": "npm run build && jest"
+    "test": "npm run build && jest --passWithNoTests"
   },
   "homepage": "https://github.com/MargaretKrutikova/reason-react-elmish",
   "bugs": "https://github.com/MargaretKrutikova/reason-react-elmish/issues",
@@ -35,20 +35,20 @@
     "url": "https://github.com/MargaretKrutikova/reason-react-elmish.git"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "bs-platform": "^5.0.6 || ^7.0.1",
-    "reason-react": "^0.7.0"
+    "react": "^17.0.2",
+    "bs-platform": "^9.0.2",
+    "@reasonable/react": "git+https://github.com/ReasonableML/reason-react.git"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
-    "@glennsl/bs-json": "^5.0.1",
-    "bs-fetch": "^0.5.0",
-    "bs-platform": "^7.0.1",
-    "parcel-bundler": "^1.12.4",
-    "react": "^16.8.6",
-    "reason-react": "^0.7.0"
+    "@glennsl/bs-jest": "^0.7.0",
+    "@glennsl/bs-json": "^5.0.4",
+    "bs-fetch": "^0.6.2",
+    "bs-platform": "^9.0.2",
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "@reasonable/react": "git+https://github.com/ReasonableML/reason-react.git"
   },
   "dependencies": {
-    "reductive": "^2.0.1"
+    "reductive": "^2.1.1"
   }
 }
